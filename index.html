@@ -2,44 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>joaomesquitahub.com</title>
   <style>
     body {
-      font-family: sans-serif;
-      background: #f0f4f8;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
       align-items: center;
-      height: 100vh;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
       margin: 0;
+      font-size: 1.5rem;
+      color: #ffffff;
     }
-    h1 {
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    main p {
+      color: #cccccc;
       margin-bottom: 2rem;
-      font-size: 2.5rem;
-      color: #333;
+      font-size: 1rem;
     }
+
     .libutton {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      padding: 7px;
+      align-items: center;
+      padding: 0.75rem 1.5rem;
       text-align: center;
       outline: none;
       text-decoration: none !important;
       color: #ffffff !important;
-      width: 200px;
-      height: 32px;
+      width: 220px;
       border-radius: 16px;
       background-color: #0A66C2;
-      font-family: "SF Pro Text", Helvetica, sans-serif;
+      font-family: 'Segoe UI', Helvetica, sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .libutton:hover {
+      background-color: #004182;
     }
   </style>
 </head>
 <body>
-  <h1>João Mesquita</h1>
+  <header>
+    <h1>João Mesquita</h1>
+  </header>
 
-  <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=joao-peres-mesquita" target="_blank">Follow on LinkedIn</a>
+  <main>
+    <h2>Let’s connect!</h2>
+    <p>Follow me on LinkedIn for insights and updates.</p>
+    <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=joao-peres-mesquita" target="_blank">Follow on LinkedIn</a>
+  </main>
 </body>
 </html>
